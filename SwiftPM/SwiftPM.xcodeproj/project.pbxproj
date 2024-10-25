@@ -10,6 +10,7 @@
 		5AEDF0502CCBB36F00880E51 /* SwiftTA in Frameworks */ = {isa = PBXBuildFile; productRef = 5AEDF04F2CCBB36F00880E51 /* SwiftTA */; };
 		5AEDF0522CCBB36F00880E51 /* SwiftTradingView in Frameworks */ = {isa = PBXBuildFile; productRef = 5AEDF0512CCBB36F00880E51 /* SwiftTradingView */; };
 		5AEDF0542CCBB36F00880E51 /* TALib in Frameworks */ = {isa = PBXBuildFile; productRef = 5AEDF0532CCBB36F00880E51 /* TALib */; };
+		5AEDF0DF2CCC1BDB00880E51 /* MyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5AEDF0DE2CCC1BDB00880E51 /* MyPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 				5AEDF0542CCBB36F00880E51 /* TALib in Frameworks */,
 				5AEDF0502CCBB36F00880E51 /* SwiftTA in Frameworks */,
 				5AEDF0522CCBB36F00880E51 /* SwiftTradingView in Frameworks */,
+				5AEDF0DF2CCC1BDB00880E51 /* MyPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,7 @@
 				5AEDF0232CCBB1FD00880E51 /* SwiftPM */,
 				5AEDF0342CCBB1FE00880E51 /* SwiftPMTests */,
 				5AEDF03E2CCBB1FE00880E51 /* SwiftPMUITests */,
+				5AEDF0C72CCC179600880E51 /* Frameworks */,
 				5AEDF0222CCBB1FD00880E51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +102,13 @@
 				5AEDF03B2CCBB1FE00880E51 /* SwiftPMUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5AEDF0C72CCC179600880E51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +134,7 @@
 				5AEDF04F2CCBB36F00880E51 /* SwiftTA */,
 				5AEDF0512CCBB36F00880E51 /* SwiftTradingView */,
 				5AEDF0532CCBB36F00880E51 /* TALib */,
+				5AEDF0DE2CCC1BDB00880E51 /* MyPackage */,
 			);
 			productName = SwiftPM;
 			productReference = 5AEDF0212CCBB1FD00880E51 /* SwiftPM.app */;
@@ -209,6 +220,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				5AEDF04E2CCBB36F00880E51 /* XCRemoteSwiftPackageReference "swift-trading-view" */,
+				5AEDF0DD2CCC1BDB00880E51 /* XCLocalSwiftPackageReference "../MyPackage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5AEDF0222CCBB1FD00880E51 /* Products */;
@@ -568,6 +580,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		5AEDF0DD2CCC1BDB00880E51 /* XCLocalSwiftPackageReference "../MyPackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MyPackage;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		5AEDF04E2CCBB36F00880E51 /* XCRemoteSwiftPackageReference "swift-trading-view" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -594,6 +613,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5AEDF04E2CCBB36F00880E51 /* XCRemoteSwiftPackageReference "swift-trading-view" */;
 			productName = TALib;
+		};
+		5AEDF0DE2CCC1BDB00880E51 /* MyPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

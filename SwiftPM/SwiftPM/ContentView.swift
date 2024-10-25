@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftTradingView
+import MyPackage
 
 struct ContentView: View {
     var body: some View {
@@ -22,6 +23,7 @@ struct ContentView: View {
                         RSIIndicator()
                     ]
                 )
+        Text(MyPackage.Utilities.greet(name: "SwiftPM"))
     }
 }
 
